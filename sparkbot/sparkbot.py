@@ -355,6 +355,9 @@ if __name__ == '__main__':
     parser.add_argument(
         "-a", "--activerooms", help="comma-delimited list of active rooms", required=False
     )
+    parser.add_argument(
+        "-au", "--authorizedusers", help="comma-delimited list of authorized users", required=False
+    )
 
     args = parser.parse_args()
 
@@ -406,7 +409,7 @@ if __name__ == '__main__':
         activerooms = active_rooms.split(",")
    # sys.stderr.write("Active rooms: " + active_rooms + "\n")
 
-    authorized_users = args.authorized_users
+    authorized_users = args.authorizedusers
     if (authorized_users == None):
         authorized_users = os.getenv("authorized_users")
         authorizedusers = authorized_users.split(",")
