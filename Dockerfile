@@ -16,7 +16,7 @@ COPY requirements.txt /app/
 RUN pip install -r /app/requirements.txt
 
 WORKDIR /app
-ADD ./myhero_spark /app/myhero_spark
+ADD ./sparkbot /app/sparkbot
 
-CMD [ "python", "./myhero_spark/myhero_spark.py" ]
+CMD [ "python", "./sparkbot/sparkbot.py" ]
 

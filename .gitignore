@@ -1,4 +1,3 @@
+sparkbot/sparkbot.env
+start.sh
 .idea/
-.vagrant
-Vagrantfile
-drone-secrets.yml

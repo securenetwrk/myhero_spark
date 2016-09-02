@@ -1,0 +1,13 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+before_install:
+  - docker build -t sparkbot .
+  - docker run -d -p 127.0.0.1:29060:5000 -e spark_bot_url -e spark_bot_secret -e spark_bot_email -e spark_token -e active_rooms --name sparkb1 sparkbot
+
+script:
+    - docker ps | grep -q sparkb1
