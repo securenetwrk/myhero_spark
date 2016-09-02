@@ -406,10 +406,10 @@ if __name__ == '__main__':
         activerooms = active_rooms.split(",")
    # sys.stderr.write("Active rooms: " + active_rooms + "\n")
 
-    active_users = args.activeusers
-    if (active_users == None):
-        active_users = os.getenv("active_users")
-        activeusers = active_users.split(",")
+    authorized_users = args.authorized_users
+    if (authorized_users == None):
+        authorized_users = os.getenv("authorized_users")
+        authorizedusers = authorized_users.split(",")
     # sys.stderr.write("Active rooms: " + active_rooms + "\n")
 
     # Set Authorization Details for external requests
