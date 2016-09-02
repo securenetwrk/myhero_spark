@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/securenetwrk/sparkbot-base.svg?branch=master)](https://travis-ci.org/securenetwrk/sparkbot-base)
+
 # Generic Spark Bot
 
 This is the a Spark Bot as a basic proof of concept
